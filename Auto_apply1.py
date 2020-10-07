@@ -3,14 +3,14 @@ from selenium.webdriver.chrome.options import Options
 from openpyxl import load_workbook
 
 #엑셀 데이터 불러오기
-load_wb = load_workbook("C:/Users/GL/Desktop/application_info.xlsx", data_only=True)
+load_wb = load_workbook("C:/Users/GIGM/Desktop/application_info.xlsx", data_only=True)
 #시트 이름으로 불러오기
 load_ws = load_wb['Sheet1']
 
 #열린 크롬창 제어하기
 chrome_options = Options()
 chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
-chrome_driver = "C:/Users/GL/Desktop/chromedriver.exe" # Your Chrome Driver path
+chrome_driver = "C:/Users/GIGM/Desktop/chromedriver.exe" # Your Chrome Driver path
 driver = webdriver.Chrome(chrome_driver, options=chrome_options)
 
 #사이트접속
